@@ -1,0 +1,1063 @@
+@prefix : <http://www.semanticweb.org/ontologies/2018/5/nensi.owl#> .
+@prefix nensi: <http://www.semanticweb.org/ontologies/2018/5/nensi.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2018/5/nensi.owl> .
+
+<http://www.semanticweb.org/ontologies/2018/5/nensi.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAddress
+
+:hasAddress rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAdminEmail
+
+:hasAdminEmail rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAdminFirstName
+
+:hasAdminFirstName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAdminId
+
+:hasAdminId rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAdminLastName
+
+:hasAdminLastName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAdminPassword
+
+:hasAdminPassword rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasAuthor
+
+:hasAuthor rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasBookId
+
+:hasBookId rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasCategory
+
+:hasCategory rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasCity
+
+:hasCity rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasCountry
+
+:hasCountry rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasDescription
+
+:hasDescription rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasEmail
+
+:hasEmail rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasFirstName
+
+:hasFirstName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasFullName
+
+:hasFullName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasId
+
+:hasId rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasImage
+
+:hasImage rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasLastName
+
+:hasLastName rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasLocation
+
+:hasLocation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasMessage
+
+:hasMessage rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasPassword
+
+:hasPassword rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasPhoneNumber
+
+:hasPhoneNumber rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasPostalCode
+
+:hasPostalCode rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasPrice
+
+:hasPrice rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasPublishedYear
+
+:hasPublishedYear rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasQuantity
+
+:hasQuantity rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#hasTitle
+
+:hasTitle rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Admin
+
+:Admin rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Person .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Book
+
+:Book rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Client
+
+:Client rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Person .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Comics
+
+:Comics rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Book .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Contact
+
+:Contact rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Person .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#History
+
+:History rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Book .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Kids02
+
+:Kids02 rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Comics .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Kids38
+
+:Kids38 rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Comics .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Kids914
+
+:Kids914 rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Comics .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Person
+
+:Person rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Poetry
+
+:Poetry rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Book .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Religion
+
+:Religion rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Book .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#Romance
+
+:Romance rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Book .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#contact-ueaganjvvg
+
+:contact-ueaganjvvg rdf:type :Contact ,
+                             owl:Thing ;
+                    
+                    :hasFullName "ergys" ;
+                    
+                    :hasPhoneNumber "945045" ;
+                    
+                    :hasMessage "testets" ;
+                    
+                    :hasEmail "ergys@gmail.com" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#contact-yiboufgauj
+
+:contact-yiboufgauj rdf:type :Contact ,
+                             owl:Thing ;
+                    
+                    :hasFullName "test test" ;
+                    
+                    :hasPhoneNumber "3434" ;
+                    
+                    :hasMessage "test" ;
+                    
+                    :hasEmail "test@gmail.com" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#history1
+
+:history1 rdf:type :History ,
+                   owl:Thing ;
+          
+          :hasAuthor "Joseph Mitchell" ;
+          
+          :hasDescription "Saloon-keepers and street preachers, gypsies and steel-walking Mohawks, a bearded lady and a 93-year-old seafoodetarian who believes his specialized diet will keep him alive for another two decades. These are among the people." ;
+          
+          :hasBookId "5" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasPrice "100" ;
+          
+          :hasQuantity "23" ;
+          
+          :hasCategory "History" ;
+          
+          :hasTitle "Up In The Old Hotel" ;
+          
+          :hasImage "/nensinensi/img/history1.jpg" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#history2
+
+:history2 rdf:type :History ,
+                   owl:Thing ;
+          
+          :hasAuthor "David BlackBourn" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasBookId "6" ;
+          
+          :hasCategory "History" ;
+          
+          :hasTitle "Marpingen" ;
+          
+          :hasDescription "In a riveting work of historical research, David Blackbourn brings might the period surrounding the days in July 1876 when three young girls claimed to have sighted the Virgin Mary in the fields outside the German town of Marpingen." ;
+          
+          :hasImage "/nensinensi/img/history2.jpg" ;
+          
+          :hasQuantity "4" ;
+          
+          :hasPrice "60" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#history3
+
+:history3 rdf:type :History ,
+                   owl:Thing ;
+          
+          :hasCategory "History" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasAuthor "David W. Maurer" ;
+          
+          :hasTitle "The Big Con" ;
+          
+          :hasQuantity "43" ;
+          
+          :hasDescription "The classic 1940 study of con men and con games that Luc Sante in Salon called “a bonanza of wild but credible stories, told concisely with deadpan humor, as sly and rich in atmosphere as anything this side of Mark Twain." ;
+          
+          :hasPrice "66" ;
+          
+          :hasImage "/nensinensi/img/history33.jpg" ;
+          
+          :hasBookId "7" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#history4
+
+:history4 rdf:type :History ,
+                   owl:Thing ;
+          
+          :hasBookId "8" ;
+          
+          :hasAuthor "Andre Aciman" ;
+          
+          :hasDescription "When on October 31, 1517 an unknown monk nailed a theological pamphlet to the church door in a small university town, he set in motion a process he set in motion a process that helped usher in the modern world. " ;
+          
+          :hasImage "/nensinensi/img/history44.jpg" ;
+          
+          :hasQuantity "9" ;
+          
+          :hasPrice "130" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasTitle "Martin Luther" ;
+          
+          :hasCategory "History" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#history5
+
+:history5 rdf:type :History ,
+                   owl:Thing ;
+          
+          :hasTitle "Landscapes of Power" ;
+          
+          :hasCategory "History" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasDescription "This volume contains selected papers from the XV International Graduate Conference, highlighting the latest scholarship from a new generation of Late Antique and Byzantine scholars from around the world. The theme of the conference explored the interaction" ;
+          
+          :hasPrice "200" ;
+          
+          :hasImage "/nensinensi/img/history5.jpg" ;
+          
+          :hasBookId "9" ;
+          
+          :hasQuantity "24" ;
+          
+          :hasAuthor "Dana E. Powell" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#jtvzchhxpn
+
+:jtvzchhxpn rdf:type :Admin ,
+                     owl:Thing ;
+            
+            :hasAdminFirstName "testtt" ;
+            
+            :hasAdminLastName "test" ;
+            
+            :hasAdminPassword "testtest" ;
+            
+            :hasAdminId "2774bcc3-7b87-4442-acbf-1d1311218d1d" ;
+            
+            :hasAdminEmail "test@gmail.com" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#nutcuoqphs
+
+:nutcuoqphs rdf:type :Client ,
+                     owl:Thing ;
+            
+            :hasPhoneNumber "0694745884" ;
+            
+            :hasEmail "test@gmail.com" ;
+            
+            :hasFirstName "test test" ;
+            
+            :hasId "503aa67a-903b-4915-80b0-09f0dd431c68" ;
+            
+            :hasCountry "Austria" ;
+            
+            :hasCity "Tirane" ;
+            
+            :hasAddress "Rruga Qemal Stafa" ;
+            
+            :hasPassword "testtes" ;
+            
+            :hasLastName "Skenderi" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#poetry1
+
+:poetry1 rdf:type :Poetry ,
+                  owl:Thing ;
+         
+         :hasDescription "This classic poetry collection, which is both outrageously funny and profound, has been the most beloved of Shel Silverstein's poetry books for generations." ;
+         
+         :hasPrice "56" ;
+         
+         :hasPublishedYear "20-01-1995" ;
+         
+         :hasTitle "Where the Sidewalk Ends" ;
+         
+         :hasAuthor "Sel Silverstein" ;
+         
+         :hasBookId "11" ;
+         
+         :hasQuantity "12" ;
+         
+         :hasImage "/nensinensi/img/poetry1.jpg" ;
+         
+         :hasCategory "Poetry" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#poetry2
+
+:poetry2 rdf:type :Poetry ,
+                  owl:Thing ;
+         
+         :hasPrice "20" ;
+         
+         :hasAuthor "Ralph Waldo Emerson" ;
+         
+         :hasQuantity "8" ;
+         
+         :hasCategory "Poetry" ;
+         
+         :hasPublishedYear "20-01-1995" ;
+         
+         :hasBookId "12" ;
+         
+         :hasImage "/nensinensi/img/poetry2.jpg" ;
+         
+         :hasTitle "Leaves of Grass" ;
+         
+         :hasDescription "Ralph Waldo Emerson issued a call for a great poet to capture and immortalize the unique American experience. In 1855, an answer came with Leaves of Grass." .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#poetry3
+
+:poetry3 rdf:type :Poetry ,
+                  owl:Thing ;
+         
+         :hasTitle "Ariel" ;
+         
+         :hasPublishedYear "20-01-1995" ;
+         
+         :hasDescription "When Sylvia Plath died, she not only left behind a prolific life but also her unpublished literary masterpiece, Ariel. Her husband, Ted Hughes" ;
+         
+         :hasCategory "Poetry" ;
+         
+         :hasPrice "900" ;
+         
+         :hasQuantity "4" ;
+         
+         :hasBookId "13" ;
+         
+         :hasImage "/nensinensi/img/poetry3.jpg" ;
+         
+         :hasAuthor "David Ponner" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#poetry4
+
+:poetry4 rdf:type :Poetry ,
+                  owl:Thing ;
+         
+         :hasPrice "60" ;
+         
+         :hasQuantity "4" ;
+         
+         :hasImage "/nensinensi/img/poetry4.jpg" ;
+         
+         :hasPublishedYear "20-01-1995" ;
+         
+         :hasBookId "14" ;
+         
+         :hasTitle "Sonnets" ;
+         
+         :hasDescription "T.S. Eliot once wrote that, Shakespeare gives the greatest width of human passion, and it is this passion that has traditionally made The Sonnets " ;
+         
+         :hasAuthor "William Shakespeare" ;
+         
+         :hasCategory "Poetry" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#poetry5
+
+:poetry5 rdf:type :Poetry ,
+                  owl:Thing ;
+         
+         :hasCategory "Poetry" ;
+         
+         :hasImage "/nensinensi/img/poetry5.jpg" ;
+         
+         :hasBookId "15" ;
+         
+         :hasDescription "Presents the first American translation of the complete text of Baudelaire's 1857 masterwork and includes the original French texts for easy comparison." ;
+         
+         :hasPrice "680" ;
+         
+         :hasAuthor "David W. Maurer" ;
+         
+         :hasQuantity "41" ;
+         
+         :hasPublishedYear "20-01-1995" ;
+         
+         :hasTitle "Les Fleurs du Mal" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#qgsostajxf
+
+:qgsostajxf rdf:type :Client ,
+                     owl:Thing ;
+            
+            :hasCountry "dkjfvd" ;
+            
+            :hasCity "kskjv" ;
+            
+            :hasFirstName "ergys" ;
+            
+            :hasLastName "nsefn" ;
+            
+            :hasEmail "lifebitt@gmail.com" ;
+            
+            :hasPassword "ojwfiefoi" ;
+            
+            :hasAddress "krjfnkjw" ;
+            
+            :hasId "69e6c695-4dee-4be7-8fc1-e1f66c2e64c5" ;
+            
+            :hasPhoneNumber "043348" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#religion2
+
+:religion2 rdf:type :Religion ,
+                    owl:Thing ;
+           
+           :hasPublishedYear "20-01-1995" ;
+           
+           :hasDescription "A masterpiece of satire, this classic has entertained and enlightened readers the world over with its sly and ironic portrayal of human life and the meaning of love." ;
+           
+           :hasPrice "120" ;
+           
+           :hasQuantity "7" ;
+           
+           :hasBookId "16" ;
+           
+           :hasCategory "Religion" ;
+           
+           :hasAuthor "Richard Dawkins" ;
+           
+           :hasImage "/nensinensi/img/religion2.jpg" ;
+           
+           :hasTitle "The Screwtape Letters" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#religion3
+
+:religion3 rdf:type :Religion ,
+                    owl:Thing ;
+           
+           :hasImage "/nensinensi/img/religion3.jpg" ;
+           
+           :hasCategory "Religion" ;
+           
+           :hasBookId "21" ;
+           
+           :hasAuthor "C. S. Lewis" ;
+           
+           :hasPublishedYear "20-01-1995" ;
+           
+           :hasTitle "Mere Christianity" ;
+           
+           :hasQuantity "4" ;
+           
+           :hasPrice "60" ;
+           
+           :hasDescription "Mere Christianity is C.S. Lewis's forceful and accessible doctrine of Christian belief. First heard as informal radio broadcasts and then published as three separate books" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#religion4
+
+:religion4 rdf:type :Religion ,
+                    owl:Thing ;
+           
+           :hasQuantity "2" ;
+           
+           :hasPublishedYear "20-01-1995" ;
+           
+           :hasDescription "Herman Hesse's classic novel has delighted, inspired, and influenced generations of readers, writers, and thinkers. In this story of a wealthy Indian Brahmin Derdemous" ;
+           
+           :hasImage "/nensinensi/img/religion4.png" ;
+           
+           :hasPrice "920" ;
+           
+           :hasCategory "Religion" ;
+           
+           :hasAuthor "Herman Hesse" ;
+           
+           :hasTitle "Siddhartha" ;
+           
+           :hasBookId "17" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#religion5
+
+:religion5 rdf:type :Religion ,
+                    owl:Thing ;
+           
+           :hasCategory "Religion" ;
+           
+           :hasPrice "60" ;
+           
+           :hasAuthor "Gia-fu Feng" ;
+           
+           :hasTitle "Tao Te Ching" ;
+           
+           :hasBookId "18" ;
+           
+           :hasQuantity "11" ;
+           
+           :hasPublishedYear "20-01-1995" ;
+           
+           :hasImage "/nensinensi/img/religion5.jpg" ;
+           
+           :hasDescription "For nearly two generations, Gia-fu Feng and Jane English's translation of the Tao Te Ching has been the standard for those seeking access to the wisdom of Taoist" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance1
+
+:romance1 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasQuantity "12" ;
+          
+          :hasAuthor "Carolyn Brown" ;
+          
+          :hasTitle "The Sometimes Sisters " ;
+          
+          :hasPrice "344" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasDescription "When they were growing up, Dana, Harper, and Tawny thought of themselves as ?sometimes sisters.They connected only during the summer month theyd all spend at their grandmothers rustic lakeside resort." ;
+          
+          :hasImage "/nensinensi/img/romance1.jpg" ;
+          
+          :hasBookId "1" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance2
+
+:romance2 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasTitle "Never Let Me Go" ;
+          
+          :hasAuthor "Kazuo Ishiguro" ;
+          
+          :hasImage "/nensinensi/img/romance2.jpg" ;
+          
+          :hasQuantity "56" ;
+          
+          :hasBookId "2" ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasPrice "190" ;
+          
+          :hasDescription "For anyone who loves science-fiction but also wants to read a love story, Never Let Me Go should be next on your reading list. We join three prep-school kids with a complicated relationship" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance3
+
+:romance3 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasDescription "In André Aciman's novel Call Me by Your Name, you'll get transported to a fantastically romantic seaside town on the Italian coast to witness a coming-of-age tale about self-discovery, sexuality, and first love. " ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasImage "/nensinensi/img/romance3.jpg" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasBookId "3" ;
+          
+          :hasTitle "Call Me By Your Name" ;
+          
+          :hasAuthor "Andre Aciman" ;
+          
+          :hasPrice "600" ;
+          
+          :hasQuantity "12" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance4
+
+:romance4 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasImage "/nensinensi/img/romance4.jpeg" ;
+          
+          :hasQuantity "0" ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasDescription "This gripping, fresh novel will show you what it's like to live life on the edge. Though on the surface it's a book about a woman's spiral into drug abuse and mental illness while coping with unrequited love" ;
+          
+          :hasBookId "4" ;
+          
+          :hasTitle "Zippermouth" ;
+          
+          :hasAuthor "Carolyn Brown" ;
+          
+          :hasPrice "160" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance5
+
+:romance5 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasBookId "10" ;
+          
+          :hasImage "/nensinensi/img/romance5.jpg" ;
+          
+          :hasDescription "Giovanni's Room explores the  facets of one identity. For a thrilling narrative that incorporates romance, sexuality, and murder, read Giovanni's Room." ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasQuantity "41" ;
+          
+          :hasPrice "620" ;
+          
+          :hasTitle "Giovanni's Room" ;
+          
+          :hasAuthor "James Baldwin" ;
+          
+          :hasCategory "Romance" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance6
+
+:romance6 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasBookId "19" ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasQuantity "15" ;
+          
+          :hasDescription "Saloon-keepers and street preachers, gypsies and steel-walking Mohawks, a bearded lady and a 93-year-old seafoodetarian who believes his specialized diet will keep him alive for another two decades. These are among the people." ;
+          
+          :hasTitle "Up In The Old Hotel" ;
+          
+          :hasPrice "300" ;
+          
+          :hasImage "/nensinensi/img/history1.jpg" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasAuthor "Joseph Mitchell" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance7
+
+:romance7 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasImage "/nensinensi/img/history33.jpg" ;
+          
+          :hasQuantity "8" ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasDescription "The classic 1940 study of con men and con games that Luc Sante in Salon called “a bonanza of wild but credible stories, told concisely with deadpan humor, as sly and rich in atmosphere as anything this side of Mark Twain." ;
+          
+          :hasTitle "The Big Con" ;
+          
+          :hasBookId "20" ;
+          
+          :hasAuthor "David W. Maurer" ;
+          
+          :hasPrice "60" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#romance8
+
+:romance8 rdf:type :Romance ,
+                   owl:Thing ;
+          
+          :hasPrice "60" ;
+          
+          :hasCategory "Romance" ;
+          
+          :hasBookId "22" ;
+          
+          :hasQuantity "43" ;
+          
+          :hasPublishedYear "20-01-1995" ;
+          
+          :hasTitle "Ariel" ;
+          
+          :hasImage "/nensinensi/img/poetry3.jpg" ;
+          
+          :hasAuthor "David Ponner" ;
+          
+          :hasDescription "When Sylvia Plath died, she not only left behind a prolific life but also her unpublished literary masterpiece, Ariel. Her husband, Ted Hughes" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#vhfzhnyxlr
+
+:vhfzhnyxlr rdf:type :Client ,
+                     owl:Thing ;
+            
+            :hasCity "Chicago" ;
+            
+            :hasPassword "kotkot" ;
+            
+            :hasPhoneNumber "0694745884" ;
+            
+            :hasCountry "Austria" ;
+            
+            :hasId "c603016b-51e2-4cd9-b7ba-a0fd172a1b42" ;
+            
+            :hasLastName "Skenderi" ;
+            
+            :hasFirstName "rrrrr" ;
+            
+            :hasEmail "test111@gmail.com" ;
+            
+            :hasAddress "Rruga kot" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#wcsgjlbwjg
+
+:wcsgjlbwjg rdf:type :Client ,
+                     owl:Thing ;
+            
+            :hasId "0f6830e0-d6ba-4356-941b-204a16cf3f84" ;
+            
+            :hasLastName "test" ;
+            
+            :hasPhoneNumber "3434" ;
+            
+            :hasFirstName "test" ;
+            
+            :hasCity "test" ;
+            
+            :hasCountry "Austria" ;
+            
+            :hasPassword "sdsdsd" ;
+            
+            :hasAddress "test" ;
+            
+            :hasEmail "testdsdsds@gmail.com" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#wyjufhsepc
+
+:wyjufhsepc rdf:type :Client ,
+                     owl:Thing ;
+            
+            :hasCity "Tirane" ;
+            
+            :hasEmail "nensiskenderi20@gmail.com" ;
+            
+            :hasCountry "Congo" ;
+            
+            :hasPassword "nensinensi" ;
+            
+            :hasAddress "Rruga Qemal Stafa" ;
+            
+            :hasLastName "Skenderi" ;
+            
+            :hasId "ad6b501c-0e17-4db0-98a0-3cdc844a4b8c" ;
+            
+            :hasPhoneNumber "0694745884" ;
+            
+            :hasFirstName "Nensi" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#xweoobsvjx
+
+:xweoobsvjx rdf:type :Admin ,
+                     owl:Thing ;
+            
+            :hasAdminLastName "Skenderi" ;
+            
+            :hasAdminPassword "nensinensi" ;
+            
+            :hasAdminEmail "nensiskenderi20@gmail.com" ;
+            
+            :hasAdminFirstName "Nsene" ;
+            
+            :hasAdminId "7f2eb51f-7b7d-4359-821b-f75e86d9e8b3" .
+
+
+
+###  http://www.semanticweb.org/ontologies/2018/5/nensi.owl#ystzmdvkcp
+
+:ystzmdvkcp rdf:type owl:Thing ;
+            
+            :hasAdminId "5a890abd-599a-4ff4-8b6e-b886d7a215af" ;
+            
+            :hasAdminLastName "test" ;
+            
+            :hasAdminFirstName "test" ;
+            
+            :hasAdminEmail "tadsdssest@gmail.com" ;
+            
+            :hasAdminPassword "sdsdsds" .
+
+
+
+
+###  Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net
+
